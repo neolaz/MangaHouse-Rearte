@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MangaHouse</title>
+	<link rel="shortcut icon" href="../img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="bgHeaderFooter container">
+        <nav>
+            <div>
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="Logo de MangaHouse">
+                    <p>MangaHouse</p>
+                </a>
+            </div>  
+            <ul>
+                <li>
+                    <a href="catalogo.html">Catálogo</a>
+                </li>
+                <li>
+                    <a href="sucursales.html">Sucursales</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <div class="menu">
+                <a href="menuContacto.html">
+                    <img src="../img/menu.png" alt="Menu">
+                </a>          
+            </div>
+        </nav>
+    </header>
+	<main class="contacto container">
+        <div>
+            <img class="imgResponsive" src="../img/contactus.png" alt="Contact us">
+        </div>
+        <h1>Contáctenos!</h1>
+        <h2>Complete el formulario y en breve nos comunicaremos con usted!</h2>
+        <form action="envio.php">
+            <div class="input">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" placeholder="Ingrese su nombre">
+            </div>
+            <div class="input">
+                <label for="lastName">Apellido</label>
+                <input type="text" id="lastName" placeholder="Ingrese su apelldo"> 
+            </div>
+            <div class="input">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" placeholder="Ingrese su mail">
+            </div>
+            <div class="input">
+                <label for="phone">Teléfono</label>
+                <input type="text" id="phone" placeholder="Ingrese su teléfono">
+            </div>
+            <div class="input">
+                <label for="province">Provincia</label>
+                <input type="text" id="province" placeholder="Ingrese su provincia">
+            </div>
+            <div class="input">
+                <label for="city">Ciudad</label>
+                <input type="text" id="city" placeholder="Ingrese su ciudad">
+            </div>
+            <div class="input">
+                <label for="street">Calle</label>
+                <input type="text" id="street" placeholder="Ingrese su calle">
+            </div>
+            <div class="input">
+                <label for="stnumber">Altura</label>
+                <input type="text" id="stnumber" placeholder="Ingrese su altura">
+            </div>
+            <div class="selectableOptions">
+                <div>
+                    <legend>Cómo quieres que te contactemos?</legend>
+                    <div>
+                        <input type="radio" id="mail" value="mail" name="mail">
+                        <label for="mail">Mail</label>
+                        <input type="radio" id="telefono" value="telefono" name="telefono">
+                        <label for="telefono">Teléfono</label>
+                    </div>
+                </div>
+                <div>
+                    <legend>En qué momento quieres que te contactemos?</legend>
+                    <div>
+                        <input type="checkbox" id="maniana" value="maniana">
+                        <label for="maniana">Mañana</label>
+                        <input type="checkbox" id="tarde" value="tarde">
+                        <label for="tarde">Tarde</label>
+                        <input type="checkbox" id="noche" value="noche">
+                        <label for="noche">Noche</label>
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                <label for="comentario">Mensaje</label>
+                <textarea cols="100" rows="10" placeholder="Deje aquí su mensaje"></textarea>
+                <input type="submit" value="Enviar"> 
+            </div>
+        </form>
+	</main>
+	<footer class="bgHeaderFooter container">
+        <a href="https://instagram.com/" target="_blank">
+			<img src="../img/instagram.png" alt="Instagram">
+		</a>
+		<a href="https://twitter.com/" target="_blank">
+			<img src="../img/twitter.png" alt="Twitter">
+		</a>
+		<a href="https://facebook.com/" target="_blank">
+			<img src="../img/facebook.png" alt="Facebook">
+		</a>
+	</footer>
+</body>
+</html>
