@@ -5,10 +5,37 @@
     color: #FFFFFF;
    }
 
-header nav{
+body{
+    background-color: #272727;
+}
+
+header nav.navbar-expand-lg div.container-fluid{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header nav.navbar-expand-lg div.container-fluid button.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+header nav.navbar-expand-lg div.container-fluid button.navbar-toggler:hover{
+    opacity: 0.5;
+}
+
+
+header nav.navbar-expand-lg div.container-fluid button span.navbar-toggler-icon{
+    background-image: url(../img/menu.png);
+}
+
+header nav.navbar-expand-lg div.container-fluid div{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: initial;
+}
+
+header nav.navbar-expand-lg div.container-fluid div.collapse:not(.show){
+   display: none;
 }
 
 header nav div a{
@@ -16,8 +43,19 @@ header nav div a{
     text-decoration: none;
 }
 
-header nav div a img,
-header nav .menu img{
+header nav div a.logo{
+    transition-timing-function: ease;
+    transition: 0.4s;
+}
+
+header nav div a.logo:hover{
+    opacity: 0.5;
+    transform: scale(0.7);
+    transition-timing-function: ease;
+    transition: 0.4s;
+}
+
+header nav div a img{
     width: 40px;
     height: 40px;
 }
@@ -26,6 +64,7 @@ header nav div a p{
     color: #30fdb0;
     font-size: 2em;
     margin-left: 10px;
+    margin-bottom: 0px;
 }
 
 header nav ul{
@@ -37,10 +76,16 @@ header nav ul li{
     margin-left: 10px;
 }
 
-header nav ul li a{
+header nav ul li a.nav-link{
     text-decoration: none;
     color: #30fdb0;
 }   
+
+header nav ul li a.nav-link:hover{
+    text-decoration: none;
+    color: #30fdb0;
+    opacity: 0.5;
+}  
 
 footer{
     display: flex;
@@ -51,6 +96,15 @@ footer img {
     width: 30px;
     height: 30px;
     margin-left: 10px;
+    transition-timing-function: ease;
+    transition: 0.4s;
+}
+
+footer img:hover{
+    opacity: 0.5;
+    transform: scale(0.7);
+    transition-timing-function: ease;
+    transition: 0.4s;
 }
 
 .bgHeaderFooter{
@@ -58,6 +112,12 @@ footer img {
 }
 
 .container{
+    padding: 10px 15px;
+    box-sizing: border-box;
+    max-width: none;
+}
+
+.containerCustom{
     padding: 10px 15px;
     box-sizing: border-box;
 }
@@ -82,12 +142,12 @@ footer img {
 
 /* Index ---------------------------------------------*/   
 .index {
-    background-color: #232323;
+    background-color: #272727;
 }   
 
 /* Catalogo ---------------------------------------------*/   
 .catalogo {
-    background-color: #232323;
+    background-color: #272727;
 }   
 
 .catalogo .containerFlex{
@@ -108,7 +168,7 @@ footer img {
 
 /* Sucursales ---------------------------------------------*/
 .sucursales{
-    background-color: #232323;
+    background-color: #272727;
 }
 
 .sucursales .containerFlex{
@@ -137,7 +197,7 @@ footer img {
 
 /* Nosotros ---------------------------------------------*/
 .nosotros{
-    background-color: #232323;
+    background-color: #272727;
 }
 
 .nosotros.containerFlex{
@@ -159,7 +219,7 @@ footer img {
 
 /* Contacto ---------------------------------------------*/    
 .contacto{
-    background-color: #232323;
+    background-color: #272727;
 }
 
 .contacto form{
@@ -170,7 +230,7 @@ footer img {
 
 .contacto form input,
 .contacto form textarea{
-    background-color: #232323;
+    background-color: #272727;
     border: 1px solid #FFF;
     padding: 5px 10px;
     border-radius: 5px;
@@ -214,7 +274,7 @@ footer img {
 .contacto form .message input{
     margin-top: 10px;
     background-color: #30fdb0;
-    color: #232323;
+    color: #272727;
     font-size: 1em;
     font-weight: bold;
     border: none;
@@ -222,7 +282,7 @@ footer img {
 
 /* Menu ---------------------------------------------*/  
 .menu{
-    background-color: #232323;
+    background-color: #272727;
 }
 
 .menu div ul{
@@ -260,18 +320,18 @@ Media Queries ------------------------------------------
 
 /* Header y Footer ------------------------------------*/
 @media (max-width: 600px){
-	header nav ul{
+	/* header nav ul{
         display: none;
-    } 
+    }  */
     footer{
         justify-content: center;
     }
 }
 
 @media (min-width: 601px){
-	header nav .menu{
+	/* header nav .menu{
         display: none;
-    }    
+    }     */
 }
 
 /* Catálogo ---------------------------------------------*/
