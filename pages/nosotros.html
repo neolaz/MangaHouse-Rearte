@@ -8,48 +8,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="bgHeaderFooter container">
-        <nav>
-            <div>
-                <a href="../index.html">
-                    <img src="../img/logo.png" alt="Logo de MangaHouse">
-                    <p>MangaHouse</p>
-                </a>
+    <header class="bgHeaderFooter containerHeader">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="logo" href="../index.html">
+              <img src="../img/logo.png" alt="Logo de MangaHouse">
+              <p>MangaHouse</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sucursales.html">Sucursales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
             </div>
-            <ul>
-                <li>
-                    <a href="catalogo.html">Catálogo</a>
-                </li>
-                <li>
-                    <a href="sucursales.html">Sucursales</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <div class="menu">
-                <a href="menuNosotros.html">
-                    <img src="../img/menu.png" alt="Menu">
-                </a>          
-            </div>
+          </div>
         </nav>
     </header>
-	<main class="nosotros container containerFlex">
-        <div>
-            <img class="imgResponsive" src="../img/aboutus.png" alt="Nosotros">
-        </div>
-        <div>
-            <h1 class="title">Sobre Nosotros!</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo mauris quis nisi placerat blandit. Mauris nec lacinia ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ac bibendum enim. Etiam a placerat lacus, vel egestas justo. Vestibulum hendrerit lectus sit amet imperdiet pulvinar. Nam enim enim, tempor nec lectus in, lacinia ultricies sapien. Ut lobortis ultrices turpis, sed pellentesque mi. Suspendisse pulvinar sed sem eu imperdiet. Integer mollis lorem neque, ac ullamcorper magna euismod at. Sed malesuada tristique lorem auctor molestie. Nam vel consequat turpis, quis eleifend lorem. Aliquam urna nisl, rhoncus at maximus in, condimentum ut dui.Vestibulum molestie ligula a pellentesque fermentum. Fusce auctor dui non orci aliquet feugiat. Fusce quis lacus augue. Ut ornare enim eu orci lobortis mollis. Vestibulum elementum iaculis mi, cursus rhoncus sem viverra eu. In lobortis magna vitae dapibus lacinia. Donec suscipit, nisi sed scelerisque imperdiet, neque augue sollicitudin lacus, non tincidunt est odio non tellus. Etiam a fermentum nibh.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent sed ipsum sagittis, sagittis purus quis, porta ipsum. Vivamus est mi, facilisis a arcu nec, tempus scelerisque turpis. Proin arcu augue, finibus et fringilla cursus, sagittis vitae tellus. Fusce quis lectus ut orci imperdiet euismod a at ante. Aenean in pharetra erat, at volutpat dui. Nunc blandit scelerisque tellus. Vivamus venenatis lorem eget lorem ullamcorper, at efficitur libero rutrum. Ut nec nulla pellentesque, tincidunt enim vitae, tristique neque. Duis eu justo ligula. </p>
-        </div>
+	<main class="nosotros containerCustom containerFlex">
+      <div>
+          <img class="imgResponsive" src="../img/aboutus1.png" alt="Nosotros">
+      </div>
+      <div class="textoNosotros">
+        <h1 class="title">Sobre Nosotros!</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo mauris quis nisi placerat blandit. Mauris nec lacinia ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ac bibendum enim. Etiam a placerat lacus, vel egestas justo. Vestibulum hendrerit lectus sit amet imperdiet pulvinar. Nam enim enim, tempor nec lectus in, lacinia ultricies sapien. Ut lobortis ultrices turpis, sed pellentesque mi. Suspendisse pulvinar sed sem eu imperdiet. Integer mollis lorem neque, ac ullamcorper magna euismod at. Sed malesuada tristique lorem auctor molestie. Nam vel consequat turpis, quis eleifend lorem. Aliquam urna nisl, rhoncus at maximus in, condimentum ut dui.Vestibulum molestie ligula a pellentesque fermentum. Fusce auctor dui non orci aliquet feugiat. Fusce quis lacus augue. Ut ornare enim eu orci lobortis mollis. Vestibulum elementum iaculis mi, cursus rhoncus sem viverra eu. In lobortis magna vitae dapibus lacinia. Donec suscipit, nisi sed scelerisque imperdiet, neque augue sollicitudin lacus, non tincidunt est odio non tellus. Etiam a fermentum nibh.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent sed ipsum sagittis, sagittis purus quis, porta ipsum. Vivamus est mi, facilisis a arcu nec, tempus scelerisque turpis. Proin arcu augue, finibus et fringilla cursus, sagittis vitae tellus. Fusce quis lectus ut orci imperdiet euismod a at ante. Aenean in pharetra erat, at volutpat dui. Nunc blandit scelerisque tellus. Vivamus venenatis lorem eget lorem ullamcorper, at efficitur libero rutrum. Ut nec nulla pellentesque, tincidunt enim vitae, tristique neque. Duis eu justo ligula. </p>
+      </div>
 	</main>
-	<footer class="bgHeaderFooter container">
+	<footer class="bgHeaderFooter containerCustom">
         <a href="https://instagram.com/" target="_blank">
 			<img src="../img/instagram.png" alt="Instagram">
 		</a>
@@ -60,5 +61,6 @@
 			<img src="../img/facebook.png" alt="Facebook">
 		</a>
 	</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
