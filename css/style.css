@@ -207,11 +207,11 @@ footer img:hover{
     flex-wrap: wrap;
 }
 
-.nosotros.containerFlex div:first-child{
+.nosotros.containerFlex .divCarousel{
     width: 68%;
 }
 
-.nosotros.containerFlex div:last-child{
+.nosotros.containerFlex .textoNosotros{
     width: 29%;
     display: flex;
     flex-direction: column;
@@ -343,10 +343,10 @@ Media Queries ------------------------------------------
 
 /* Nosotros ---------------------------------------------*/
 @media (max-width: 1350px){
-	.nosotros.containerFlex div:first-child{
+	.nosotros.containerFlex .divCarousel{
         width: 100%;
     }
-    .nosotros.containerFlex div:last-child{
+    .nosotros.containerFlex .textoNosotros{
         width: 100%;
     }
 }
