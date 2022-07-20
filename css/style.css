@@ -146,26 +146,27 @@ footer img:hover{
     background-color: #272727;
 }   
 
-/* Catalogo ---------------------------------------------*/   
-.catalogo {
-    background-color: #272727;
-}   
+/* Catalogo ---------------------------------------------*/ 
+.catalogo{
+    max-width: none;
+} 
 
-.catalogo .containerFlex{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.catalogo .row .col-xl-3{
+    padding-bottom: calc(var(--bs-gutter-x) * .5);
 }
 
-.catalogo .containerFlex article{
-    width: 24%;
-    margin-bottom: 20px;
-    align-items: center;
+.catalogo .mangaCard{
     border: 2px solid #30fdb0;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 15px;
 }
+
+.catalogo .mangaCard h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: none;
+    margin-top: 10px;
+}
+
 
 /* Sucursales ---------------------------------------------*/
 .sucursales{
@@ -307,25 +308,6 @@ Media Queries ------------------------------------------
     .fullHeight{
         height: 100%;
     } 
-}
-
-/* Catálogo ---------------------------------------------*/
-@media (max-width: 420px){
-	.catalogo .containerFlex article{
-        width: 96%;
-    }  
-}
-
-@media (min-width: 421px) and (max-width: 840px){
-	.catalogo .containerFlex article{
-        width: 43%;
-    }  
-}
-
-@media (min-width: 841px) and (max-width: 1260px){
-	.catalogo .containerFlex article{
-        width: 32%;
-    }  
 }
 
 /* Sucursales ---------------------------------------------*/
