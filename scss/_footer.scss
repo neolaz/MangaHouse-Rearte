@@ -1,0 +1,18 @@
+/* Footer ---------------------------------------------*/ 
+footer{
+    display: flex;
+    justify-content: flex-end;
+    img{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        transition-timing-function: ease;
+        transition: 0.4s;
+    }
+    img:hover{
+        opacity: 0.5;
+        transform: scale(0.7);
+        transition-timing-function: ease;
+        transition: 0.4s;
+    }
+}

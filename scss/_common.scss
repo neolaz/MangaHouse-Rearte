@@ -1,0 +1,48 @@
+/* Common ---------------------------------------------*/ 
+* {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    color: #FFFFFF;
+}
+body{
+    background-color: $bg_dark;
+}
+.bgHeaderFooter{
+    background-color: $bg_dark;
+}
+.containerCustom{
+    box-sizing: border-box;
+    max-width: none;
+    padding: 10px 15px;
+}
+.containerHeader{
+    box-sizing: border-box;
+    max-width: none;
+    padding: 0px 0px;
+}
+.containerFlex{
+    display: flex;
+}
+.title{
+    margin-bottom: 20px;
+    font-size: $textTitle;
+    font-weight: bold;
+}
+.subTitle{
+    font-size: $textSubtitle;
+    font-weight: bold;
+}
+.textGeneric{
+    font-size: $textGeneric;
+}
+.imgResponsive{
+    width: 100%;
+    height: auto;
+ }
+ .headerMenu{
+    justify-content: flex-end;
+ }
+ .navbar-nav .nav-link.active{
+    color: #FFFFFF;
+ }

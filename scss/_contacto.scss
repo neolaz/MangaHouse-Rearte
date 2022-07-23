@@ -1,0 +1,60 @@
+/* Contacto ---------------------------------------------*/ 
+.contacto{
+    background-color: $bg_dark;
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        input,
+        textarea{
+            background-color: $bg_dark;
+            border: 1px solid #FFFFFF;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        label,
+        legend{
+            color: $text_green;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            width: 24%;
+            padding: 10px 0px;
+            box-sizing: border-box;
+        }
+        .selectableOptions{
+            display: flex;
+            padding: 10px 0px;
+            div{
+                flex-direction: row;
+                margin-right: 20px;
+                label{
+                    color: #FFFFFF;
+                    margin-right: 15px;
+                }
+            }
+        }
+        .message{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            input{
+                margin-top: 10px;
+                background-color: $text_green;
+                color: $bg_dark;
+                font-weight: bold;
+                border: none;
+                transition-timing-function: ease;
+                transition: 0.4s;
+            }
+            input:hover{
+                opacity: 0.5;
+                transform: scale(0.98);
+                transition-timing-function: ease;
+                transition: 0.4s;
+            }
+        }
+    }
+}
