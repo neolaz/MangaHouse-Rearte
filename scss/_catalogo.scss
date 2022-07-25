@@ -1,0 +1,17 @@
+/* Catalogo ---------------------------------------------*/ 
+.catalogo{
+    max-width: none;
+    .row{
+        .col-xl-3{
+            padding-bottom: calc(var(--bs-gutter-x) * .5);
+        }
+    }
+    .mangaCard{
+        border: 2px solid #30fdb0;
+        padding: 15px;
+        h2{
+            margin-bottom: none;
+            margin-top: 10px;
+        }
+    }
+}

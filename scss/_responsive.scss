@@ -1,0 +1,84 @@
+/*------------------------------------------------------
+Media Queries ------------------------------------------
+-------------------------------------------------------*/ 
+
+/* Footer ------------------------------------*/
+@media (max-width: 600px){
+    footer{
+        justify-content: center;
+    }
+}
+
+/* Index ---------------------------------------------*/
+@media (max-width: 1920px){
+	.index,
+    .fullHeight{
+        height: 100%;
+    } 
+}
+
+/* Sucursales ---------------------------------------------*/
+@media (max-width: 560px){
+	.sucursales{
+        .containerFlex{
+            article{
+                width: 90%;
+            }  
+        } 
+    }         
+}
+@media (min-width: 561px) and (max-width: 1120px){
+	.sucursales{
+        .containerFlex{
+            article{
+                width: 45%;
+            }  
+        } 
+    }         
+}
+
+/* Nosotros ---------------------------------------------*/
+@media (max-width: 1350px){
+    .nosotros.containerFlex{
+        .divCarousel{
+            width: 100%;
+        }
+        .textoNosotros{
+            width: 100%;
+        }
+    }
+}
+
+/* Contacto ---------------------------------------------*/
+@media (max-width: 420px){
+    .contacto{
+        form{
+            .input{
+                width: 96%;
+            }
+        }
+    }
+}
+@media (min-width: 421px) and (max-width: 840px){
+    .contacto{
+        form{
+            .input{
+                width: 48%;
+            }
+        }
+    }
+}
+@media (max-width: 625px){
+    .contacto{
+        form{
+            .selectableOptions{
+                flex-direction: column;
+                div:last-child{
+                    legend{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
