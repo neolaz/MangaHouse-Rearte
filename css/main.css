@@ -141,6 +141,7 @@ footer img:hover {
 
 /* Index ---------------------------------------------*/
 .index {
+  min-height: 87vh;
   background-color: #272727;
 }
 .index h1 {
