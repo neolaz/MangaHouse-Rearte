@@ -3,13 +3,13 @@
     font-family: 'Roboto', sans-serif;
     margin:0;
     padding:0;
-    color: #FFFFFF;
+    color: map-get($styles, generictTextColor);
 }
 body{
-    background-color: $bg_dark;
+    background-color: map-get($styles, bgDarkColor);
 }
 .bgHeaderFooter{
-    background-color: $bg_dark;
+    background-color: map-get($styles, bgDarkColor);
 }
 .containerCustom{
     box-sizing: border-box;
@@ -26,23 +26,28 @@ body{
 }
 .title{
     margin-bottom: 20px;
-    font-size: $textTitle;
+    font-size: map-get($styles, titleFontSize);
     font-weight: bold;
 }
 .subTitle{
-    font-size: $textSubtitle;
+    font-size: map-get($styles, subtitleFontSize);
     font-weight: bold;
 }
 .textGeneric{
-    font-size: $textGeneric;
+    font-size: map-get($styles, genericTextFontSize);
 }
 .imgResponsive{
-    width: 100%;
-    height: auto;
+    @include setSize(100%, auto);
  }
  .headerMenu{
     justify-content: flex-end;
  }
  .navbar-nav .nav-link.active{
-    color: #FFFFFF;
+    color: map-get($styles, generictTextColor);
  }
+.textBand{
+    @extend .title;
+    color: map-get($styles, accentColor);
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
