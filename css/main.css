@@ -30,7 +30,7 @@ body {
   display: flex;
 }
 
-.title, .textBand {
+.title, .textBrand {
   margin-bottom: 20px;
   font-size: 2em;
   font-weight: bold;
@@ -58,7 +58,7 @@ body {
   color: #FFFFFF;
 }
 
-.textBand {
+.textBrand {
   color: #30fdb0;
   margin-left: 10px;
   margin-bottom: 0px;

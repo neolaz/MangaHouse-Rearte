@@ -45,7 +45,7 @@ body{
  .navbar-nav .nav-link.active{
     color: map-get($styles, generictTextColor);
  }
-.textBand{
+.textBrand{
     @extend .title;
     color: map-get($styles, accentColor);
     margin-left: 10px;
