@@ -7,7 +7,7 @@
         }
     }
     .mangaCard{
-        border: 2px solid #30fdb0;
+        border: 2px solid map-get($styles, accentColor);
         padding: 15px;
         h2{
             margin-bottom: none;
