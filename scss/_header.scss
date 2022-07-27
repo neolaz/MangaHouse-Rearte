@@ -1,8 +1,7 @@
 /* Header ---------------------------------------------*/ 
 header{
     nav.navbar-expand-lg div.container-fluid{
-        display: flex;
-        justify-content: space-between;
+        @include flex-space-between;
         align-items: center;
         button.navbar-toggler:focus{
             box-shadow: none;
@@ -16,8 +15,7 @@ header{
             }
         }     
         div{
-            display: flex;
-            justify-content: flex-end;
+            @include flex-end;
             flex-grow: initial;
         }
         div.collapse:not(.show){
@@ -29,27 +27,20 @@ header{
             a{
                 display: flex;
                 text-decoration: none;
-                font-size: $textGeneric;
+                font-size: map-get($styles, genericTextFontSize);
                 img{
-                    width: 40px;
-                    height: 40px; 
-                }
-                p{
-                    color: $text_green;
-                    font-size: $textTitle;
-                    margin-left: 10px;
-                    margin-bottom: 0px;
+                    @include setSize(40px, 40px);
                 }
             }
             a.logo{
                 transition-timing-function: ease;
                 transition: 0.4s;
-            }
-            a.logo:hover{
-                opacity: 0.5;
-                transform: scale(0.90);
-                transition-timing-function: ease;
-                transition: 0.4s;
+                &:hover{
+                    opacity: 0.5;
+                    transform: scale(0.90);
+                    transition-timing-function: ease;
+                    transition: 0.4s;
+                }
             }
         }
         ul{
@@ -58,13 +49,13 @@ header{
             li{
                 a.nav-link{
                     text-decoration: none;
-                    color: $text_green;
+                    color: map-get($styles, accentColor);
+                    &:hover{
+                        text-decoration: none;
+                        color: map-get($styles, accentColor);
+                        opacity: 0.5;
+                    }     
                 }
-                a.nav-link:hover{
-                    text-decoration: none;
-                    color: $text_green;
-                    opacity: 0.5;
-                }     
             }
         }
     }        

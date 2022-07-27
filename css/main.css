@@ -30,7 +30,7 @@ body {
   display: flex;
 }
 
-.title {
+.title, .textBand {
   margin-bottom: 20px;
   font-size: 2em;
   font-weight: bold;
@@ -56,6 +56,12 @@ body {
 
 .navbar-nav .nav-link.active {
   color: #FFFFFF;
+}
+
+.textBand {
+  color: #30fdb0;
+  margin-left: 10px;
+  margin-bottom: 0px;
 }
 
 /* Header ---------------------------------------------*/
@@ -89,12 +95,6 @@ header nav div a {
 header nav div a img {
   width: 40px;
   height: 40px;
-}
-header nav div a p {
-  color: #30fdb0;
-  font-size: 2em;
-  margin-left: 10px;
-  margin-bottom: 0px;
 }
 header nav div a.logo {
   transition-timing-function: ease;
@@ -142,7 +142,6 @@ footer img:hover {
 /* Index ---------------------------------------------*/
 .index {
   min-height: 87vh;
-  background-color: #272727;
 }
 .index h1 {
   margin-top: 20px;
@@ -204,10 +203,10 @@ footer img:hover {
   width: 68%;
 }
 .nosotros.containerFlex .textoNosotros {
-  width: 29%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  width: 29%;
+  flex-direction: column;
 }
 .nosotros.containerFlex .textoNosotros h1 {
   margin-top: 20px;
@@ -219,8 +218,8 @@ footer img:hover {
 }
 .contacto form {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .contacto form input,
 .contacto form textarea {

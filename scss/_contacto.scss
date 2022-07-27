@@ -1,21 +1,20 @@
 /* Contacto ---------------------------------------------*/ 
 .contacto{
-    background-color: $bg_dark;
+    background-color: map-get($styles, bgDarkColor);
     form{
-        display: flex;
+        @include flex-space-between;
         flex-wrap: wrap;
-        justify-content: space-between;
         input,
         textarea{
-            background-color: $bg_dark;
-            border: 1px solid #FFFFFF;
+            background-color: map-get($styles, bgDarkColor);
+            border: 1px solid map-get($styles, generictTextColor);
             padding: 5px 10px;
             border-radius: 5px;
             margin-top: 5px;
         }
         label,
         legend{
-            color: $text_green;
+            color: map-get($styles, accentColor);
         }
         .input{
             display: flex;
@@ -31,7 +30,7 @@
                 flex-direction: row;
                 margin-right: 20px;
                 label{
-                    color: #FFFFFF;
+                    color: map-get($styles, generictTextColor);
                     margin-right: 15px;
                 }
             }
@@ -42,18 +41,18 @@
             width: 100%;
             input{
                 margin-top: 10px;
-                background-color: $text_green;
-                color: $bg_dark;
+                background-color: map-get($styles, accentColor);
+                color: map-get($styles, bgDarkColor);
                 font-weight: bold;
                 border: none;
                 transition-timing-function: ease;
                 transition: 0.4s;
-            }
-            input:hover{
-                opacity: 0.5;
-                transform: scale(0.98);
-                transition-timing-function: ease;
-                transition: 0.4s;
+                &:hover{
+                    opacity: 0.5;
+                    transform: scale(0.98);
+                    transition-timing-function: ease;
+                    transition: 0.4s;
+                }
             }
         }
     }
