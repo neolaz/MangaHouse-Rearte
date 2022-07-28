@@ -3,6 +3,13 @@
     height: $height;
 }
 
+@mixin setHover($scale){
+    opacity: 0.5;
+    transform: scale($scale);
+    transition-timing-function: ease;
+    transition: 0.4s;
+}
+
 @mixin flex-center{
     display: flex;
     justify-content: center;

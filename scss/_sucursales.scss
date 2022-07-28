@@ -7,20 +7,11 @@
         article{
             width: 30%;
             margin-bottom: 20px;
-            .containerMap{
-                @include setSize(100%, 500px);
-                iframe{
-                    width: 100%;    
-                    height: 100%;
-                }
+            h2{
+                color: map-get($styles, accentColor);
+                margin-bottom: 0px;
+                margin-top: 10px;
             }
-            div{
-                h2{
-                    color: map-get($styles, accentColor);
-                    margin-bottom: 0px;
-                    margin-top: 10px;
-                }
-            } 
         }
     }
 }

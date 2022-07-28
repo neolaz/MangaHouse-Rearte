@@ -58,10 +58,50 @@ body {
   color: #FFFFFF;
 }
 
+.brandLogo {
+  transition-timing-function: ease;
+  transition: 0.4s;
+}
+.brandLogo:hover {
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition-timing-function: ease;
+  transition: 0.4s;
+}
+
 .textBrand {
   color: #30fdb0;
   margin-left: 10px;
   margin-bottom: 0px;
+}
+
+.imgSocialMedia {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  transition-timing-function: ease;
+  transition: 0.4s;
+}
+.imgSocialMedia:hover {
+  opacity: 0.5;
+  transform: scale(0.7);
+  transition-timing-function: ease;
+  transition: 0.4s;
+}
+
+.mangaCard {
+  border: 2px solid #30fdb0;
+  padding: 15px;
+}
+
+.containerMap {
+  width: 100%;
+  height: 500px;
+}
+
+.iframeFullSize {
+  width: 100%;
+  height: 100%;
 }
 
 /* Header ---------------------------------------------*/
@@ -96,16 +136,6 @@ header nav div a img {
   width: 40px;
   height: 40px;
 }
-header nav div a.logo {
-  transition-timing-function: ease;
-  transition: 0.4s;
-}
-header nav div a.logo:hover {
-  opacity: 0.5;
-  transform: scale(0.9);
-  transition-timing-function: ease;
-  transition: 0.4s;
-}
 header nav ul {
   display: flex;
   list-style-type: none;
@@ -125,19 +155,6 @@ footer {
   display: flex;
   justify-content: flex-end;
 }
-footer img {
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-  transition-timing-function: ease;
-  transition: 0.4s;
-}
-footer img:hover {
-  opacity: 0.5;
-  transform: scale(0.7);
-  transition-timing-function: ease;
-  transition: 0.4s;
-}
 
 /* Index ---------------------------------------------*/
 .index {
@@ -154,11 +171,7 @@ footer img:hover {
 .catalogo .row .col-xl-3 {
   padding-bottom: calc(var(--bs-gutter-x) * 0.5);
 }
-.catalogo .mangaCard {
-  border: 2px solid #30fdb0;
-  padding: 15px;
-}
-.catalogo .mangaCard h2 {
+.catalogo h2 {
   margin-bottom: none;
   margin-top: 10px;
 }
@@ -175,15 +188,7 @@ footer img:hover {
   width: 30%;
   margin-bottom: 20px;
 }
-.sucursales .containerFlex article .containerMap {
-  width: 100%;
-  height: 500px;
-}
-.sucursales .containerFlex article .containerMap iframe {
-  width: 100%;
-  height: 100%;
-}
-.sucursales .containerFlex article div h2 {
+.sucursales .containerFlex article h2 {
   color: #30fdb0;
   margin-bottom: 0px;
   margin-top: 10px;
@@ -202,13 +207,13 @@ footer img:hover {
 .nosotros.containerFlex .divCarousel {
   width: 68%;
 }
-.nosotros.containerFlex .textoNosotros {
+.nosotros.containerFlex .containerNosotros {
   display: flex;
   justify-content: center;
   width: 29%;
   flex-direction: column;
 }
-.nosotros.containerFlex .textoNosotros h1 {
+.nosotros.containerFlex .containerNosotros h1 {
   margin-top: 20px;
 }
 
@@ -233,31 +238,31 @@ footer img:hover {
 .contacto form legend {
   color: #30fdb0;
 }
-.contacto form .input {
+.contacto form .containerInput {
   display: flex;
   flex-direction: column;
   width: 24%;
   padding: 10px 0px;
   box-sizing: border-box;
 }
-.contacto form .selectableOptions {
+.contacto form .containerSelectableOptions {
   display: flex;
   padding: 10px 0px;
 }
-.contacto form .selectableOptions div {
+.contacto form .containerSelectableOptions div {
   flex-direction: row;
   margin-right: 20px;
 }
-.contacto form .selectableOptions div label {
+.contacto form .containerSelectableOptions div label {
   color: #FFFFFF;
   margin-right: 15px;
 }
-.contacto form .message {
+.contacto form .containerMessage {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.contacto form .message input {
+.contacto form .containerMessage input {
   margin-top: 10px;
   background-color: #30fdb0;
   color: #272727;
@@ -266,7 +271,7 @@ footer img:hover {
   transition-timing-function: ease;
   transition: 0.4s;
 }
-.contacto form .message input:hover {
+.contacto form .containerMessage input:hover {
   opacity: 0.5;
   transform: scale(0.98);
   transition-timing-function: ease;
