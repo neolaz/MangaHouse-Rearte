@@ -45,9 +45,35 @@ body{
  .navbar-nav .nav-link.active{
     color: map-get($styles, generictTextColor);
  }
+ .brandLogo{
+    transition-timing-function: ease;
+    transition: 0.4s;
+    &:hover{
+        @include setHover(0.9);
+    }
+}
 .textBrand{
     @extend .title;
     color: map-get($styles, accentColor);
     margin-left: 10px;
     margin-bottom: 0px;
+}
+.imgSocialMedia{
+    @include setSize(30px, 30px);
+    margin-left: 10px;
+    transition-timing-function: ease;
+    transition: 0.4s;
+    &:hover{
+        @include setHover(0.7);
+    }
+}
+.mangaCard{
+    border: 2px solid map-get($styles, accentColor);
+    padding: 15px;
+}
+.containerMap{
+    @include setSize(100%, 500px);
+}
+.iframeFullSize{
+    @include setSize(100%, 100%);
 }

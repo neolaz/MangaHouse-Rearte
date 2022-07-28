@@ -6,12 +6,8 @@
             padding-bottom: calc(var(--bs-gutter-x) * .5);
         }
     }
-    .mangaCard{
-        border: 2px solid map-get($styles, accentColor);
-        padding: 15px;
-        h2{
-            margin-bottom: none;
-            margin-top: 10px;
-        }
-    }
+    h2{
+        margin-bottom: none;
+        margin-top: 10px;
+    }    
 }

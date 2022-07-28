@@ -32,16 +32,6 @@ header{
                     @include setSize(40px, 40px);
                 }
             }
-            a.logo{
-                transition-timing-function: ease;
-                transition: 0.4s;
-                &:hover{
-                    opacity: 0.5;
-                    transform: scale(0.90);
-                    transition-timing-function: ease;
-                    transition: 0.4s;
-                }
-            }
         }
         ul{
             display: flex;

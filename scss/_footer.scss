@@ -1,16 +1,4 @@
 /* Footer ---------------------------------------------*/ 
 footer{
     @include flex-end;
-    img{
-        @include setSize(30px, 30px);
-        margin-left: 10px;
-        transition-timing-function: ease;
-        transition: 0.4s;
-        &:hover{
-            opacity: 0.5;
-            transform: scale(0.7);
-            transition-timing-function: ease;
-            transition: 0.4s;
-        }
-    }
 }

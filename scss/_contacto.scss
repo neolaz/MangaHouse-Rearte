@@ -16,14 +16,14 @@
         legend{
             color: map-get($styles, accentColor);
         }
-        .input{
+        .containerInput{
             display: flex;
             flex-direction: column;
             width: 24%;
             padding: 10px 0px;
             box-sizing: border-box;
         }
-        .selectableOptions{
+        .containerSelectableOptions{
             display: flex;
             padding: 10px 0px;
             div{
@@ -35,7 +35,7 @@
                 }
             }
         }
-        .message{
+        .containerMessage{
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -48,10 +48,7 @@
                 transition-timing-function: ease;
                 transition: 0.4s;
                 &:hover{
-                    opacity: 0.5;
-                    transform: scale(0.98);
-                    transition-timing-function: ease;
-                    transition: 0.4s;
+                    @include setHover(0.98);
                 }
             }
         }
