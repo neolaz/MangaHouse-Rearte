@@ -310,26 +310,26 @@ Media Queries ------------------------------------------
   .nosotros.containerFlex .divCarousel {
     width: 100%;
   }
-  .nosotros.containerFlex .textoNosotros {
+  .nosotros.containerFlex .containerNosotros {
     width: 100%;
   }
 }
 /* Contacto ---------------------------------------------*/
 @media (max-width: 420px) {
-  .contacto form .input {
+  .contacto form .containerInput {
     width: 96%;
   }
 }
 @media (min-width: 421px) and (max-width: 840px) {
-  .contacto form .input {
+  .contacto form .containerInput {
     width: 48%;
   }
 }
 @media (max-width: 625px) {
-  .contacto form .selectableOptions {
+  .contacto form .containerSelectableOptions {
     flex-direction: column;
   }
-  .contacto form .selectableOptions div:last-child legend {
+  .contacto form .containerSelectableOptions div:last-child legend {
     margin-top: 10px;
   }
 }
