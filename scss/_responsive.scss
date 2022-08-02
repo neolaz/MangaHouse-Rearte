@@ -43,7 +43,7 @@ Media Queries ------------------------------------------
         .divCarousel{
             width: 100%;
         }
-        .textoNosotros{
+        .containerNosotros{
             width: 100%;
         }
     }
@@ -53,7 +53,7 @@ Media Queries ------------------------------------------
 @media (max-width: 420px){
     .contacto{
         form{
-            .input{
+            .containerInput{
                 width: 96%;
             }
         }
@@ -62,7 +62,7 @@ Media Queries ------------------------------------------
 @media (min-width: 421px) and (max-width: 840px){
     .contacto{
         form{
-            .input{
+            .containerInput{
                 width: 48%;
             }
         }
@@ -71,7 +71,7 @@ Media Queries ------------------------------------------
 @media (max-width: 625px){
     .contacto{
         form{
-            .selectableOptions{
+            .containerSelectableOptions{
                 flex-direction: column;
                 div:last-child{
                     legend{
