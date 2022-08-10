@@ -1,5 +1,5 @@
 # MangaHouse #
-Proyecto final para el curso de Desarrollo Web de CoderHouse. Se muestra el sitio primero para Desktop y luego para Mobile.
+Proyecto final para el curso de Desarrollo Web de CoderHouse. Se muestra el sitio completo, primero para Desktop y luego para Mobile.
 
 ## Desktop ##
 
