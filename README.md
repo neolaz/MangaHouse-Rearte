@@ -4,36 +4,36 @@ Proyecto final para el curso de Desarrollo Web de CoderHouse
 ## Desktop ##
 
 ### Home ###
-![HomeDesktop](https://imgur.com/wqf1TSM)
+![HomeDesktop](https://imgur.com/wqf1TSM.png)
 
 ### Catálogo ###
-![CatalogoDesktop](https://imgur.com/TbC5BXD)
+![CatalogoDesktop](https://imgur.com/TbC5BXD.png)
 
 ### Sucursales ###
-![SucursalesDesktop](https://imgur.com/7xEdzWa)
+![SucursalesDesktop](https://imgur.com/7xEdzWa.png)
 
 ### Nosotros ###
-![NosotrosDesktop](https://imgur.com/X5frOkI)
+![NosotrosDesktop](https://imgur.com/X5frOkI.png)
 
 ### Contacto ###
-![NosotrosDesktop](https://imgur.com/eDXGYD4)
+![NosotrosDesktop](https://imgur.com/eDXGYD4.png)
 
 ## Mobile
 
 ### Menu ###
-![MenuMobile](https://imgur.com/xWSBkcL)
+![MenuMobile](https://imgur.com/xWSBkcL.png)
 
 ### Home ###
-![HomeMobile](https://imgur.com/ZzRUmyb)
+![HomeMobile](https://imgur.com/ZzRUmyb.png)
 
 ### Catálogo ###
-![CatalogoMobile](https://imgur.com/TaR9fes)
+![CatalogoMobile](https://imgur.com/TaR9fes.png)
 
 ### Sucursales ###
-![SucursalesMobile](https://imgur.com/6VyOvCL)
+![SucursalesMobile](https://imgur.com/6VyOvCL.png)
 
 ### Nosotros ###
-![NosotrosMobile](https://imgur.com/KDXKGaY)
+![NosotrosMobile](https://imgur.com/KDXKGaY.png)
 
 ### Contacto ###
-![ContactoMobile](https://imgur.com/mC8A3qc)
+![ContactoMobile](https://imgur.com/mC8A3qc.png)
