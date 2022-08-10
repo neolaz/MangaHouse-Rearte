@@ -3,17 +3,19 @@ header{
     nav.navbar-expand-lg div.container-fluid{
         @include flex-space-between;
         align-items: center;
-        button.navbar-toggler:focus{
-            box-shadow: none;
-        }
-        button.navbar-toggler:hover{
-            opacity: 0.5;
-        }
         button{
             span.navbar-toggler-icon{
                 background-image: url(../img/menu.svg);
             }
-        }     
+            .navbar-toggler{
+                &:focus{
+                    box-shadow: none;
+                }
+                &:hover{
+                    opacity: 0.5;
+                }           
+            }
+        } 
         div{
             @include flex-end;
             flex-grow: initial;
