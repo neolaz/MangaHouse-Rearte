@@ -6,8 +6,31 @@
             padding-bottom: calc(var(--bs-gutter-x) * .5);
         }
     }
-    h2{
-        margin-bottom: none;
-        margin-top: 10px;
-    }    
+    .mangaCard{
+        figure{
+            position:relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+            margin: 0px;
+            img{
+                transition: all 400ms ease-out;
+                will-change: transform;
+            }
+            .cardDescription{
+                h2{
+                    transition: all 400ms ease-out;
+                    color: map-get($styles, accentColor);
+                    @include setSize(100%, auto);
+                }
+            }
+            &:hover > .cardDescription {
+                opacity: 1;
+                visibility: visible;
+            }
+            &:hover > img{
+                filter: blur(5px);
+            }
+         }
+    }
 }

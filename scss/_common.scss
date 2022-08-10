@@ -69,7 +69,19 @@ body{
 }
 .mangaCard{
     border: 2px solid map-get($styles, accentColor);
+    border-radius: 10px;
     padding: 15px;
+}
+.cardDescription{
+    @include setSize(100%, 100%);
+    position: absolute;
+    top: 0;
+    background: map-get($styles, bgMangaCard);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
 }
 .containerMap{
     @include setSize(100%, 500px);
